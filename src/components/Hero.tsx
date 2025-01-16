@@ -1,5 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Image from 'next/image';
+
+
 
 const Hero = () => {
   return (
@@ -37,9 +40,11 @@ const Hero = () => {
 
         {/* Image */}
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          <img
+          <Image
             src="/zeeshan-photos.png.png"
             alt="Zeeshan"
+            width={150}
+            height={150}
             className="w-2/3 lg:w-3/4 max-w-md rounded-lg shadow-lg"
           />
         </div>
